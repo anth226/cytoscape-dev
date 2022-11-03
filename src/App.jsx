@@ -1,10 +1,9 @@
-// import "./App.css";
-
 import { useState } from "react";
 import Cytoscape from 'cytoscape';
 import CytoscapeComponent from "react-cytoscapejs";
 import COSEBilkent from 'cytoscape-cose-bilkent';
-import graphData from './data/graphElements.json'
+import graphData from './data/newData.json'
+import DataTable from "./DataTable";
 
 Cytoscape.use(COSEBilkent);
 
@@ -56,6 +55,9 @@ function App() {
   const [layout, setLayout] = useState(layoutConfigs.breadthfirst)
   const [tableData, setTableData] = useState([])
 
+  
+  
+
 
   const styleSheet = [
     {
@@ -70,27 +72,29 @@ function App() {
         // "height": "mapData(score, 0, 0.006769776522008331, 20, 60)",
         // "text-valign": "center",
         // "text-halign": "center",
-        "overlay-padding": "6px",
+        "overlay-padding": "2px",
         "z-index": "10",
         //text props
-        "text-outline-color": "#4a56a6",
-        "text-outline-width": "2px",
-        color: "white",
-        fontSize: 20
+        // "text-outline-color": "data(background_color)",
+        // "text-outline-width": "1px",
+        color: "black",
+        fontSize: 16 
       }
     },
     {
       selector: "node:selected",
       style: {
-        "border-width": "4px",
-        "border-color": "#AAD8FF",
-        "border-opacity": "0.5",
-        "background-color": "#77828C",
-        width: 40,
-        height: 40,
+        "border-width": "5px",
+        "border-color": "#f23558",
+        "border-opacity": ".6",
+        "background-color": "#fff",
+        
+        width: 30,
+        height: 30,
         //text props
-        "text-outline-color": "#77828C",
-        "text-outline-width": 2
+        fontSize: 16,
+        "text-outline-color": "data(background_color)",
+        // "text-outline-width": 5
       }
     },
     {
@@ -102,10 +106,10 @@ function App() {
     {
       selector: "edge",
       style: {
-        width: 3,
+        width: 2,
         // "line-color": "#6774cb",
-        "line-color": "#AAD8FF",
-        "target-arrow-color": "#6774cb",
+        "line-color": "#ccc",
+        "target-arrow-color": "#656565",
         "target-arrow-shape": "triangle",
         "curve-style": "bezier"
       }
@@ -116,7 +120,7 @@ function App() {
           'background-color': 'data(background_color)',
           'text-outline-color': 'data(background_color)',
       }
-  },
+    },
   ];
 
   let myCyRef;
@@ -125,77 +129,79 @@ function App() {
     setLayout(JSON.parse(e.target.value))
   }
 
+  let graphDataArr = () => {
+    let data = {...graphData}
+
+    let customizeNodes = data.nodes.reduce((arrData, item) => {
+      return arrData = [...arrData, {data: {...item.data, background_color: item.data.fraud ? 'red' : item.data.suspicious ? 'yellow' : 'green'}}]
+    }, [])
+
+    data.nodes = customizeNodes;
+
+    let customizeEdges = data.edges.reduce((arrData, item)=> {
+      return arrData = [...arrData, {data: {...item.data, source: item.data.from, target: item.data.to}}]
+    }, [])
+
+    data.edges = customizeEdges
+
+    return data
+  }
+
+
+  const resetFilter = () => {
+    setLayout(layoutConfigs.breadthfirst)
+  }
+   
 
   return (
     <div className="main">
       <div className="layout">
         <div className="header">
-          <h1>Cytoscape example</h1>
-          <select onClick={handleLayout}>
-            {
-              Object.keys(layoutConfigs).map((layoutName, index) => (
-                <option key={`layout-item-${index}`} value={JSON.stringify(layoutConfigs[layoutName])}>{layoutName}</option>
-              ))
-            }
-          </select>
+          <h4>Network</h4>
         </div>
-        <div
-          style={{
-            border: "1px solid",
-            backgroundColor: "#fff"
-          }}
-        >
-          <CytoscapeComponent
-            elements={CytoscapeComponent.normalizeElements(graphData)}
-            // pan={{ x: 200, y: 200 }}
-            style={{ width: '50vw', height: '60vh' }}
-            zoomingEnabled={true}
-            maxZoom={3}
-            minZoom={.1}
-            autounselectify={false}
-            boxSelectionEnabled={true}
-            layout={layout}
-            stylesheet={styleSheet}
-            cy={cy => {
-              myCyRef = cy;
-
-              cy.on("tap", "node", evt => {
-                var node = evt.target;
-                console.log("TARGET", node.data());
-                let edgeData = cy.edges().filter(item => item.data().from === node.data().id && item.data())
-                let arrData = []
-                edgeData.forEach(item => {
-                  arrData.push(item.data())
-                })
-                setTableData(arrData)
-              });
-            }}
-            abc={console.log("myCyRef", myCyRef)}
-          />
-        </div>
-        <div>
-          <table border={1}>
-            <thead>
-              <tr>
-                <th>from</th>
-                <th>to</th>
-                <th>keyType</th>
-                <th>via</th>
-              </tr>
-            </thead>
-            <tbody>
+        <div className="content">
+          <div className="change-layout">
+            <select onClick={handleLayout}>
               {
-                tableData.map((item, index) => (
-                  <tr key={`table-item-${index}`}>
-                    <td>{item.from}</td>
-                    <td>{item.to}</td>
-                    <td>{item.keyType}</td>
-                    <td>{item.via}</td>
-                  </tr>
+                Object.keys(layoutConfigs).map((layoutName, index) => (
+                  <option key={`layout-item-${index}`} value={JSON.stringify(layoutConfigs[layoutName])}>{layoutName}</option>
                 ))
               }
-            </tbody>
-          </table>
+            </select>
+
+            <button type="button" onClick={resetFilter}>Reset Filters</button>
+          </div>
+          
+          <div className="data-chart">
+            <CytoscapeComponent
+              elements={CytoscapeComponent.normalizeElements(graphDataArr())}
+              // pan={{ x: 200, y: 200 }}
+              style={{ width: 'calc(100% - 10px)', minHeight: '500px', padding: '5px', border: '1px solid #ddd' }}
+              zoomingEnabled={true}
+              maxZoom={3}
+              minZoom={.1}
+              autounselectify={false}
+              boxSelectionEnabled={true}
+              layout={layout}
+              stylesheet={styleSheet}
+              cy={cy => {
+                myCyRef = cy;
+                cy.on("tap", "node", evt => {
+                  var node = evt.target;
+                  let edgeData = cy.edges().filter(item => item.data().from === node.data().id && item.data())
+                  let arrData = []
+                  edgeData.forEach(item => {
+                    arrData.push(item.data())
+                  })
+                  setTableData(arrData)
+                });
+              }}
+              abc={console.log("myCyRef", myCyRef)}
+            />
+          </div>
+          <div className="data-table">
+            <DataTable data={tableData} />
+          </div>
         </div>
       </div>
     </div>

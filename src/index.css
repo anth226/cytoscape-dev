@@ -4,10 +4,6 @@
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,64 +11,80 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.main {
-  width: 100vw;
-}
 .layout {
   max-width: 991px;
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.header {
+  padding: 8px 15px;
+  background-color: #f1f1f1;
+}
+
+.header h4 {
+  margin: 0;
+}
+
+.content {
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+}
+
+.change-layout{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.change-layout button {
+  padding: 8px 20px;
+  color: #fff;
+  background-color: darkcyan;
+  border: unset;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.change-layout select {
+  border-radius: 5px;
+  border-color: #ddd;
+  padding: 5px;
+}
+
+.data-table {
+  margin-top: 10px;
+}
+
+.table {
+	width:100%;
+	border:1px solid #EEEEEE;
+}
+
+.table-header {
+	display:flex;
+	background:#000;
+	padding:12px;
+}
+
+.table-row {
+	display:flex;
+	padding:12px;	
+}
+
+.table-row:nth-of-type(odd) {
+  background: #EEEEEE;
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+  
+  font-size: 14px;
+}
+
+.header__item {
+	text-transform:uppercase;
+  color: #fff;
 }
