@@ -1,0 +1,174 @@
+{
+  "nodes": [
+    {
+      "data": {
+        "id": "12345",
+        "fraud": false,
+        "open": true,
+        "suspicious": false
+      }
+    },
+    {
+      "data": {
+        "id": "23456",
+        "fraud": false,
+        "open": false,
+        "suspicious": false
+      }
+    },
+    {
+      "data": {
+        "id": "34567",
+        "fraud": false,
+        "open": true,
+        "suspicious": false
+      }
+    },
+    {
+      "data": {
+        "id": "45678",
+        "fraud": true,
+        "open": false,
+        "suspicious": false
+      }
+    },
+    {
+      "data": {
+        "id": "56789",
+        "fraud": false,
+        "open": true,
+        "suspicious": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "data": {
+        "from": "12345",
+        "to": "23456",
+        "via": "John Nonesuch",
+        "keyType": "person_name"
+      }
+    },
+    {
+      "data": {
+        "from": "12345",
+        "to": "23456",
+        "via": "7111222334",
+        "keyType": "person_cellular"
+      }
+    },
+    {
+      "data": {
+        "from": "12345",
+        "to": "34567",
+        "via": "Fred Fredsson",
+        "keyType": "person_name"
+      }
+    },
+    {
+      "data": {
+        "from": "12345",
+        "to": "34567",
+        "via": "BB22BBB",
+        "keyType": "vehicle_num"
+      }
+    },
+    {
+      "data": {
+        "from": "12345",
+        "to": "34567",
+        "via": "7999888776",
+        "keyType": "person_cellular"
+      }
+    },
+    {
+      "data": {
+        "from": "12345",
+        "to": "45678",
+        "via": "7222334334",
+        "keyType": "person_cellular"
+      }
+    },
+    {
+      "data": {
+        "from": "12345",
+        "to": "56789",
+        "via": "7222334334",
+        "keyType": "person_cellular"
+      }
+    },
+    {
+      "data": {
+        "from": "23456",
+        "to": "12345",
+        "via": "John Nonesuch",
+        "keyType": "person_name"
+      }
+    },
+    {
+      "data": {
+        "from": "23456",
+        "to": "12345",
+        "via": "7111222334",
+        "keyType": "person_cellular"
+      }
+    },
+    {
+      "data": {
+        "from": "34567",
+        "to": "12345",
+        "via": "Fred Fredsson",
+        "keyType": "person_name"
+      }
+    },
+    {
+      "data": {
+        "from": "34567",
+        "to": "12345",
+        "via": "7999888776",
+        "keyType": "person_cellular"
+      }
+    },
+    {
+      "data": {
+        "from": "34567",
+        "to": "12345",
+        "via": "BB22BBB",
+        "keyType": "vehicle_num"
+      }
+    },
+    {
+      "data": {
+        "from": "45678",
+        "to": "12345",
+        "via": "7222334334",
+        "keyType": "person_cellular"
+      }
+    },
+    {
+      "data": {
+        "from": "45678",
+        "to": "56789",
+        "via": "7222334334",
+        "keyType": "person_cellular"
+      }
+    },
+    {
+      "data": {
+        "from": "56789",
+        "to": "12345",
+        "via": "7222334334",
+        "keyType": "person_cellular"
+      }
+    },
+    {
+      "data": {
+        "from": "56789",
+        "to": "45678",
+        "via": "7222334334",
+        "keyType": "person_cellular"
+      }
+    }
+  ]
+}
