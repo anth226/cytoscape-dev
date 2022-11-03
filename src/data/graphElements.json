@@ -1,0 +1,1114 @@
+{
+  "nodes": [
+    {
+      "data": {
+        "claim_id": "243463",
+        "fraud": false,
+        "rejected": false,
+        "id": "243463",
+        "label": "testing"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "75793",
+        "fraud": false,
+        "rejected": false,
+        "id": "75793"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "166205",
+        "fraud": false,
+        "rejected": false,
+        "id": "166205"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "375885",
+        "fraud": false,
+        "rejected": false,
+        "id": "375885"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "207689",
+        "fraud": false,
+        "rejected": false,
+        "id": "207689"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "314204",
+        "fraud": false,
+        "rejected": false,
+        "id": "314204"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "199004",
+        "fraud": false,
+        "rejected": false,
+        "id": "199004"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "91237",
+        "fraud": false,
+        "rejected": false,
+        "id": "91237"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "23405",
+        "fraud": false,
+        "rejected": false,
+        "id": "23405"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "419187",
+        "fraud": false,
+        "rejected": false,
+        "id": "419187"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "182678",
+        "fraud": false,
+        "rejected": true,
+        "id": "182678"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "185755",
+        "fraud": false,
+        "rejected": false,
+        "id": "185755"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "171430",
+        "fraud": false,
+        "rejected": false,
+        "id": "171430"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "395946",
+        "fraud": false,
+        "rejected": false,
+        "id": "395946"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "325562",
+        "fraud": false,
+        "rejected": false,
+        "id": "325562"
+      }
+    },
+    {
+      "data": {
+        "claim_id": "166862",
+        "fraud": false,
+        "rejected": false,
+        "id": "166862"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "data": {
+        "from": "199004",
+        "to": "375885",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "199004",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "185755",
+        "to": "375885",
+        "via": "567961",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "185755",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "375885",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "75793",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "166862",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "75793",
+        "target": "166862"
+      }
+    },
+    {
+      "data": {
+        "from": "166205",
+        "to": "395946",
+        "via": "1751455",
+        "keyType": "vehicle_num",
+        "directed": "false",
+        "source": "166205",
+        "target": "395946"
+      }
+    },
+    {
+      "data": {
+        "from": "314204",
+        "to": "325562",
+        "via": "438764",
+        "keyType": "person_address",
+        "directed": "false",
+        "source": "314204",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "314204",
+        "to": "419187",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "314204",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "419187",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "171430",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "314204",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "23405",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "199004",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "171430",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "199004",
+        "to": "314204",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "199004",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "314204",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "171430",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "166205",
+        "to": "243463",
+        "via": "1806462",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "166205",
+        "target": "243463"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "325562",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "75793",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "419187",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "166862",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "207689",
+        "to": "419187",
+        "via": "771928",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "207689",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "314204",
+        "via": "438762",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "75793",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "166205",
+        "to": "243463",
+        "via": "505390",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "166205",
+        "target": "243463"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "199004",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "23405",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "171430",
+        "via": "1674377",
+        "keyType": "vehicle_num",
+        "directed": "false",
+        "source": "75793",
+        "target": "171430"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "171430",
+        "via": "8497",
+        "keyType": "standing_ord_card",
+        "directed": "false",
+        "source": "75793",
+        "target": "171430"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "166205",
+        "via": "284871",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "23405",
+        "target": "166205"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "185755",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "166862",
+        "target": "185755"
+      }
+    },
+    {
+      "data": {
+        "from": "185755",
+        "to": "419187",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "185755",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "166205",
+        "to": "243463",
+        "via": "629083",
+        "keyType": "person_cellular",
+        "directed": "false",
+        "source": "166205",
+        "target": "243463"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "75793",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "23405",
+        "target": "75793"
+      }
+    },
+    {
+      "data": {
+        "from": "185755",
+        "to": "375885",
+        "via": "567962",
+        "keyType": "person_address",
+        "directed": "false",
+        "source": "185755",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "325562",
+        "via": "8497",
+        "keyType": "standing_ord_card",
+        "directed": "false",
+        "source": "171430",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "325562",
+        "via": "438762",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "171430",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "243463",
+        "via": "1751455",
+        "keyType": "vehicle_num",
+        "directed": "false",
+        "source": "166862",
+        "target": "243463"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "314204",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "75793",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "419187",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "23405",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "171430",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "166862",
+        "target": "171430"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "199004",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "75793",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "166205",
+        "via": "1083768",
+        "keyType": "bank_account_detail",
+        "directed": "false",
+        "source": "23405",
+        "target": "166205"
+      }
+    },
+    {
+      "data": {
+        "from": "199004",
+        "to": "325562",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "199004",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "199004",
+        "via": "284871",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "166862",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "199004",
+        "via": "284872",
+        "keyType": "person_address",
+        "directed": "false",
+        "source": "166862",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "171430",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "23405",
+        "target": "171430"
+      }
+    },
+    {
+      "data": {
+        "from": "325562",
+        "to": "419187",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "325562",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "171430",
+        "via": "438762",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "75793",
+        "target": "171430"
+      }
+    },
+    {
+      "data": {
+        "from": "91237",
+        "to": "166205",
+        "via": "1806462",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "91237",
+        "target": "166205"
+      }
+    },
+    {
+      "data": {
+        "from": "314204",
+        "to": "325562",
+        "via": "438762",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "314204",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "375885",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "166862",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "375885",
+        "to": "419187",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "375885",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "314204",
+        "via": "8497",
+        "keyType": "standing_ord_card",
+        "directed": "false",
+        "source": "171430",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "91237",
+        "to": "166205",
+        "via": "505390",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "91237",
+        "target": "166205"
+      }
+    },
+    {
+      "data": {
+        "from": "185755",
+        "to": "375885",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "185755",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "185755",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "171430",
+        "target": "185755"
+      }
+    },
+    {
+      "data": {
+        "from": "166205",
+        "to": "166862",
+        "via": "1751455",
+        "keyType": "vehicle_num",
+        "directed": "false",
+        "source": "166205",
+        "target": "166862"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "395946",
+        "via": "1751455",
+        "keyType": "vehicle_num",
+        "directed": "false",
+        "source": "166862",
+        "target": "395946"
+      }
+    },
+    {
+      "data": {
+        "from": "185755",
+        "to": "314204",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "185755",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "185755",
+        "to": "199004",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "185755",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "182678",
+        "to": "375885",
+        "via": "1229054",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "182678",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "166205",
+        "to": "166862",
+        "via": "284871",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "166205",
+        "target": "166862"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "166862",
+        "via": "284871",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "23405",
+        "target": "166862"
+      }
+    },
+    {
+      "data": {
+        "from": "314204",
+        "to": "325562",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "314204",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "182678",
+        "to": "375885",
+        "via": "1855139",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "182678",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "199004",
+        "via": "284871",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "23405",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "325562",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "166862",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "166205",
+        "to": "199004",
+        "via": "284871",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "166205",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "185755",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "23405",
+        "target": "185755"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "419187",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "75793",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "325562",
+        "via": "8497",
+        "keyType": "standing_ord_card",
+        "directed": "false",
+        "source": "75793",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "375885",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "23405",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "171430",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "75793",
+        "target": "171430"
+      }
+    },
+    {
+      "data": {
+        "from": "185755",
+        "to": "375885",
+        "via": "187390",
+        "keyType": "standing_ord_card",
+        "directed": "false",
+        "source": "185755",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "199004",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "166862",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "199004",
+        "to": "419187",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "199004",
+        "target": "419187"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "375885",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "171430",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "171430",
+        "via": "438763",
+        "keyType": "person_address",
+        "directed": "false",
+        "source": "75793",
+        "target": "171430"
+      }
+    },
+    {
+      "data": {
+        "from": "166205",
+        "to": "243463",
+        "via": "1751455",
+        "keyType": "vehicle_num",
+        "directed": "false",
+        "source": "166205",
+        "target": "243463"
+      }
+    },
+    {
+      "data": {
+        "from": "314204",
+        "to": "325562",
+        "via": "8497",
+        "keyType": "standing_ord_card",
+        "directed": "false",
+        "source": "314204",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "314204",
+        "to": "375885",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "314204",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "166862",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "23405",
+        "target": "166862"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "314204",
+        "via": "438762",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "171430",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "314204",
+        "to": "325562",
+        "via": "1460825",
+        "keyType": "vehicle_num",
+        "directed": "false",
+        "source": "314204",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "166205",
+        "to": "166862",
+        "via": "1648917",
+        "keyType": "vehicle_num",
+        "directed": "false",
+        "source": "166205",
+        "target": "166862"
+      }
+    },
+    {
+      "data": {
+        "from": "325562",
+        "to": "375885",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "325562",
+        "target": "375885"
+      }
+    },
+    {
+      "data": {
+        "from": "185755",
+        "to": "325562",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "185755",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "171430",
+        "to": "325562",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "171430",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "166862",
+        "via": "284872",
+        "keyType": "person_address",
+        "directed": "false",
+        "source": "23405",
+        "target": "166862"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "199004",
+        "via": "284872",
+        "keyType": "person_address",
+        "directed": "false",
+        "source": "23405",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "314204",
+        "via": "8497",
+        "keyType": "standing_ord_card",
+        "directed": "false",
+        "source": "75793",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "166862",
+        "to": "314204",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "166862",
+        "target": "314204"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "185755",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "75793",
+        "target": "185755"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "199004",
+        "via": "1199057",
+        "keyType": "vehicle_num",
+        "directed": "false",
+        "source": "23405",
+        "target": "199004"
+      }
+    },
+    {
+      "data": {
+        "from": "23405",
+        "to": "325562",
+        "via": "1870002",
+        "keyType": "person_email",
+        "directed": "false",
+        "source": "23405",
+        "target": "325562"
+      }
+    },
+    {
+      "data": {
+        "from": "75793",
+        "to": "325562",
+        "via": "438762",
+        "keyType": "person_id",
+        "directed": "false",
+        "source": "75793",
+        "target": "325562"
+      }
+    }
+  ]
+}
