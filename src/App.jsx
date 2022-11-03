@@ -15,20 +15,26 @@ const layoutConfigs = {
       animationEasing: 'ease-in-out',
       roots: 'node[root_node]',
       avoidOverlap: true,
+      expandCollapseCueSize: 12,
+      allowNestedEdgeCollapse: true
   },
   circle: {
       name: 'circle',
       animate: 'end',
       animationDuration: 1000,
       animationEasing: 'ease-in-out',
-      nodeSeparation: 220
+      nodeSeparation: 220,
+      expandCollapseCueSize: 12,
+      allowNestedEdgeCollapse: true
   },
   grid: {
       name: 'grid',
       animate: 'end',
       animationDuration: 1000,
       animationEasing: 'ease-in-out',
-      nodeSeparation: 220
+      nodeSeparation: 220,
+      expandCollapseCueSize: 12,
+      allowNestedEdgeCollapse: true
   },
   concentric: {
       name: 'concentric',
@@ -36,7 +42,9 @@ const layoutConfigs = {
       animationDuration: 1000,
       animationEasing: 'ease-in-out',
       padding: 30,
-      minNodeSpacing: 70
+      minNodeSpacing: 70,
+      expandCollapseCueSize: 12,
+      allowNestedEdgeCollapse: true
   },
   cose: {
     name: 'cose-bilkent',
@@ -47,6 +55,8 @@ const layoutConfigs = {
     // fit: false,
     padding: 50,
     idealEdgeLength: 200,
+    expandCollapseCueSize: 12,
+    allowNestedEdgeCollapse: true
   }
 }
 
@@ -54,9 +64,6 @@ function App() {
 
   const [layout, setLayout] = useState(layoutConfigs.breadthfirst)
   const [tableData, setTableData] = useState([])
-
-  
-  
 
 
   const styleSheet = [
@@ -84,10 +91,10 @@ function App() {
     {
       selector: "node:selected",
       style: {
+        'background-color': "red",
         "border-width": "5px",
         "border-color": "#f23558",
         "border-opacity": ".6",
-        "background-color": "#fff",
         
         width: 30,
         height: 30,
@@ -106,12 +113,12 @@ function App() {
     {
       selector: "edge",
       style: {
-        width: 2,
+        width: 3,
         // "line-color": "#6774cb",
         "line-color": "#ccc",
         "target-arrow-color": "#656565",
-        "target-arrow-shape": "triangle",
-        "curve-style": "bezier"
+        "target-arrow-shape": "none",
+        "curve-style": "straight"
       }
     },
     {
@@ -161,7 +168,7 @@ function App() {
         </div>
         <div className="content">
           <div className="change-layout">
-            <select onClick={handleLayout}>
+            <select onChange={handleLayout} value={JSON.stringify(layout)}>
               {
                 Object.keys(layoutConfigs).map((layoutName, index) => (
                   <option key={`layout-item-${index}`} value={JSON.stringify(layoutConfigs[layoutName])}>{layoutName}</option>
@@ -195,8 +202,11 @@ function App() {
                   })
                   setTableData(arrData)
                 });
+
+                cy.on("tapend", "edge", evt => {
+                  console.log(evt.target)
+                })
               }}
-              abc={console.log("myCyRef", myCyRef)}
             />
           </div>
           <div className="data-table">
