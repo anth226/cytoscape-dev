@@ -6,7 +6,8 @@
         "fraud": false,
         "rejected": false,
         "id": "243463",
-        "label": "testing"
+        "label": "testing",
+        "background_color": "#E14D2A"
       }
     },
     {
@@ -14,7 +15,8 @@
         "claim_id": "75793",
         "fraud": false,
         "rejected": false,
-        "id": "75793"
+        "id": "75793",
+        "background_color": "#FD841F"
       }
     },
     {
@@ -22,7 +24,8 @@
         "claim_id": "166205",
         "fraud": false,
         "rejected": false,
-        "id": "166205"
+        "id": "166205",
+        "background_color": "#3E6D9C"
       }
     },
     {
@@ -30,7 +33,8 @@
         "claim_id": "375885",
         "fraud": false,
         "rejected": false,
-        "id": "375885"
+        "id": "375885",
+        "background_color": "#001253"
       }
     },
     {
@@ -38,7 +42,8 @@
         "claim_id": "207689",
         "fraud": false,
         "rejected": false,
-        "id": "207689"
+        "id": "207689",
+        "background_color": "#FFE9A0"
       }
     },
     {
@@ -46,7 +51,8 @@
         "claim_id": "314204",
         "fraud": false,
         "rejected": false,
-        "id": "314204"
+        "id": "314204",
+        "background_color": "#367E18"
       }
     },
     {
@@ -54,7 +60,8 @@
         "claim_id": "199004",
         "fraud": false,
         "rejected": false,
-        "id": "199004"
+        "id": "199004",
+        "background_color": "#001253"
       }
     },
     {
@@ -62,7 +69,8 @@
         "claim_id": "91237",
         "fraud": false,
         "rejected": false,
-        "id": "91237"
+        "id": "91237",
+        "background_color": "#A7D2CB"      
       }
     },
     {
@@ -70,7 +78,8 @@
         "claim_id": "23405",
         "fraud": false,
         "rejected": false,
-        "id": "23405"
+        "id": "23405",
+        "background_color": "#F2D388"      
       }
     },
     {
@@ -78,7 +87,8 @@
         "claim_id": "419187",
         "fraud": false,
         "rejected": false,
-        "id": "419187"
+        "id": "419187",
+        "background_color": "#C98474"
       }
     },
     {
@@ -86,7 +96,8 @@
         "claim_id": "182678",
         "fraud": false,
         "rejected": true,
-        "id": "182678"
+        "id": "182678",
+        "background_color": "#874C62"
       }
     },
     {
@@ -94,7 +105,8 @@
         "claim_id": "185755",
         "fraud": false,
         "rejected": false,
-        "id": "185755"
+        "id": "185755",
+        "background_color": "#6FEDD6"
       }
     },
     {
@@ -102,7 +114,8 @@
         "claim_id": "171430",
         "fraud": false,
         "rejected": false,
-        "id": "171430"
+        "id": "171430",
+        "background_color": "#42032C"
       }
     },
     {
@@ -110,7 +123,8 @@
         "claim_id": "395946",
         "fraud": false,
         "rejected": false,
-        "id": "395946"
+        "id": "395946",
+        "background_color": "#CA4E79"
       }
     },
     {
@@ -118,7 +132,8 @@
         "claim_id": "325562",
         "fraud": false,
         "rejected": false,
-        "id": "325562"
+        "id": "325562",
+        "background_color": "#1A4D2E"
       }
     },
     {
@@ -126,7 +141,8 @@
         "claim_id": "166862",
         "fraud": false,
         "rejected": false,
-        "id": "166862"
+        "id": "166862",
+        "background_color": "#990000"
       }
     }
   ],
