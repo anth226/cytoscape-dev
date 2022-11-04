@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Cytoscape from 'cytoscape';
 import CytoscapeComponent from "react-cytoscapejs";
+// import expandCollapse from "cytoscape-expand-collapse";
 import COSEBilkent from 'cytoscape-cose-bilkent';
 import graphData from './data/newData.json'
 import DataTable from "./DataTable";
 
+// Cytoscape.use(expandCollapse);
 Cytoscape.use(COSEBilkent);
 
 const layoutConfigs = {
@@ -65,8 +67,8 @@ function App() {
   const [layout, setLayout] = useState(layoutConfigs.breadthfirst)
   const [tableData, setTableData] = useState([])
 
-
   const styleSheet = [
+    
     {
       selector: "node",
       style: {
@@ -89,18 +91,25 @@ function App() {
       }
     },
     {
-      selector: "node:selected",
+      selector: 'node[background_color]',
       style: {
-        'background-color': "red",
-        "border-width": "5px",
-        "border-color": "#f23558",
-        "border-opacity": ".6",
+          'background-color': 'data(background_color)',
+          'text-outline-color': 'data(background_color)',
+      }
+    },
+    {
+      selector: ":selected",
+      style: {
+        "background-color": "#fff",
+        "border-width": "8px",
+        "border-color": "data(background_color)",
+        "border-opacity": ".7",
         
         width: 30,
         height: 30,
         //text props
         fontSize: 16,
-        "text-outline-color": "data(background_color)",
+        // "text-outline-color": "data(background_color)",
         // "text-outline-width": 5
       }
     },
@@ -113,24 +122,18 @@ function App() {
     {
       selector: "edge",
       style: {
-        width: 3,
+        width: 2,
         // "line-color": "#6774cb",
         "line-color": "#ccc",
         "target-arrow-color": "#656565",
         "target-arrow-shape": "none",
-        "curve-style": "straight"
+        "curve-style": "straight",
+        "source-endpoint": "inside-to-node",
+        "target-endpoint": "inside-to-node"
       }
     },
-    {
-      selector: 'node[background_color]',
-      style: {
-          'background-color': 'data(background_color)',
-          'text-outline-color': 'data(background_color)',
-      }
-    },
+    
   ];
-
-  let myCyRef;
 
   const handleLayout = (e) => {
     setLayout(JSON.parse(e.target.value))
@@ -192,20 +195,17 @@ function App() {
               layout={layout}
               stylesheet={styleSheet}
               cy={cy => {
-                myCyRef = cy;
                 cy.on("tap", "node", evt => {
+                  let arrData= []
                   var node = evt.target;
                   let edgeData = cy.edges().filter(item => item.data().from === node.data().id && item.data())
-                  let arrData = []
+                  
                   edgeData.forEach(item => {
                     arrData.push(item.data())
                   })
                   setTableData(arrData)
                 });
-
-                cy.on("tapend", "edge", evt => {
-                  console.log(evt.target)
-                })
+                
               }}
             />
           </div>
